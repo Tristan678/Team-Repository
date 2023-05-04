@@ -21,10 +21,10 @@ else:
 
 
     filename = 'example.txt'
-    contents = Tristan.read_csv_file(filename)
+    contents = Tristan.read_csv_file('Example')
     
     if contents is not None:
-        success = write_to_file(filename, contents) #whatever you called the function
+        success = write_to_file('Example', contents) #whatever you called the function
         if success:
             print("Success: File written.")
         else:
